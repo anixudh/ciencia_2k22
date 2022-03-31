@@ -1,0 +1,115 @@
+.container-fluid {
+  padding: 0;
+}
+#cvr-logo {
+  height: 80px;
+  width: 80px;
+}
+#ciencia-logo-inv {
+  height: 80px;
+  width: 80px;
+}
+#page-intro {
+  background-image: url("../assets/bg/djnight-blur.jpg");
+  height: 870px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(1, 2, 2);
+  text-shadow: 2px 2px 5px rgb(194, 180, 180);
+}
+#about {
+  padding: 50px;
+  background-image: url("../assets/bg/dark-blue-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.about-card {
+  height: 580px;
+  width: 75%;
+  padding: 50px;
+  border: 1px solid grey;
+  box-shadow: 10px 10px 5px rgb(180, 165, 165);
+  margin: 20px;
+  background-color: rgba(255, 0, 0, 0.493);
+  text-align: center;
+}
+#ciencia-logo {
+  height: 300px;
+}
+
+#main-gate {
+  height: 250px;
+}
+#acc-logo {
+  height: 120px;
+}
+.navbar {
+  height: 100px;
+}
+#dropdownMenuLink {
+  border: none;
+}
+
+.fac-main-img {
+  height: 300px;
+}
+.fac-main-card {
+  border: 3px solid rgb(34, 28, 28);
+  box-shadow: 10px 10px 5px rgb(27, 23, 23);
+}
+
+@media all and (min-width: 650px) {
+  .fac-main-card:hover {
+    transform: scale(1.25);
+    /* height: 355px;
+    width: auto; */
+  }
+}
+
+#conveners {
+  background-image: url("../assets/bg/dark-green.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.conve-img {
+  height: 200px;
+}
+
+.conve-card-main#sc {
+  height: 300px;
+  width: 400px;
+}
+.conve-card {
+  height: 900px;
+  width: 75%;
+  padding: 50px;
+  border: 1px solid grey;
+  box-shadow: 10px 10px 5px rgb(180, 165, 165);
+  margin: 20px;
+  background-color: rgba(72, 150, 124, 0);
+  text-align: center;
+}
+.conve-card-main {
+  border: 1px solid rgb(8, 20, 15);
+  box-shadow: 0 10px 10px 5px rgb(107, 146, 130),
+    0 10px 10px 5px rgb(107, 146, 130);
+  height: 370px;
+  width: 270px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#contact-us {
+  background-color: rgb(71, 16, 6);
+  color: white;
+  font-size: 24px;
+}
+/* 
+AsDe123d */
