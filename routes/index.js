@@ -3,6 +3,7 @@ var router = express.Router();
 const { body, validationResult } = require("express-validator");
 var Student = require("../models/student");
 const { DateTime } = require("luxon");
+var Student = require("../models/student");
 
 //var student_controller = require("../controllers/studentController");
 function getUniqID(name, phone, dob) {
@@ -10,6 +11,15 @@ function getUniqID(name, phone, dob) {
   n2 = phone.substring(7, 10);
   n3 = dob.split("-").join().substring(0, 2);
   return n1 + n3 + n2;
+}
+
+async function findInDB(phone, email) {
+  //flag = false;
+  const query = await Student.findOne({
+    $or: [{ phone: phone }, { email: email }],
+  });
+  if (query) return true;
+  return false;
 }
 router.get("/", function (req, res, next) {
   res.render("index");
@@ -44,7 +54,7 @@ router.post("/register", [
   // Process request after validation and sanitization.
   (req, res, next) => {
     // Extract the validation errors from a request.
-    const errors = validationResult(req);
+    let errors = validationResult(req);
 
     if (!errors.isEmpty()) {
       console.log(errors);
@@ -54,8 +64,20 @@ router.post("/register", [
         errors: errors.array(),
       });
       return;
+    } else if (findInDB(req.body.phone, req.body.email)) {
+      errors = [
+        {
+          msg: "Phone No or Email already exists! Please register with different Phone No./Email",
+        },
+      ];
+      res.render("student_form", {
+        student: req.body,
+        errors: errors,
+      });
+      return;
     } else {
       // Data from form is valid.
+
       uniqID = getUniqID(
         req.body.name,
         req.body.phone,
@@ -74,7 +96,7 @@ router.post("/register", [
         if (err) {
           return next(err);
         }
-        // Successful - redirect to new author record.
+        // Successful
         res.redirect("/success");
       });
     }
