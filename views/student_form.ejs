@@ -22,6 +22,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+   
     <title>Registration</title>
   </head>
 
@@ -42,7 +43,15 @@
                   />
                   <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
                 </div>
-
+                <% if(errors.length>0){ %>
+                  <div class="alert alert-danger alert-dismissible fade show">
+                    <ul>
+                    <% for(i=0; i<errors.length; i++){ %>
+                      <li> <%= errors[i].msg %></li>
+                      <% } %>
+                    </ul>
+                  </div>
+                  <% } %>
                 <form action="" method="POST">
                   <div class="row">
                     <div class="col-lg mb-4">
@@ -57,7 +66,7 @@
                       </div>
                     </div>
                   </div>
-
+                  
                   <div class="row">
                     <div class="col-md-6 mb-4 d-flex align-items-center">
                       <div class="form-outline datepicker w-100">

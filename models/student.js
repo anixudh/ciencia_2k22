@@ -8,6 +8,7 @@ var StudentSchema = new Schema({
   phone: { type: String, required: true },
   email: { type: String, required: true },
   gender: { type: String },
+  uniqID: { type: String },
 });
 
 //Export model
