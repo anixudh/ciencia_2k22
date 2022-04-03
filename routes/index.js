@@ -15,11 +15,10 @@ function getUniqID(name, phone, dob) {
 
 async function findInDB(phone, email) {
   //flag = false;
-  const query = await Student.findOne({
+  const query = await Student.exists({
     $or: [{ phone: phone }, { email: email }],
   });
-  if (query) return true;
-  return false;
+  return query;
 }
 router.get("/", function (req, res, next) {
   res.render("index");
@@ -52,32 +51,54 @@ router.post("/register", [
     .withMessage("Invalid phone-no"),
 
   // Process request after validation and sanitization.
-  (req, res, next) => {
+  async (req, res, next) => {
     // Extract the validation errors from a request.
     let errors = validationResult(req);
+    //let query;
+    // (async () => {
+    //   query = await findInDB(req.body.phone, req.body.email);
+    //   console.log("Hi");
+    // })();
+    const query = await Student.exists({
+      $or: [{ phone: req.body.phone }, { email: req.body.email }],
+    });
 
-    if (!errors.isEmpty()) {
-      console.log(errors);
+    if (query) {
+      errors = [
+        {
+          msg: "Phone No or Email already exists! Please register with different Phone No./Email",
+        },
+      ];
+
+      res.render("student_form", {
+        student: req.body,
+        errors: errors,
+      });
+      return;
+      //console.log(errors);
+    } else if (!errors.isEmpty()) {
+      //console.log(errors);
       // There are errors. Render form again with sanitized values/errors messages.
       res.render("student_form", {
         student: req.body,
         errors: errors.array(),
       });
       return;
-    } else if (findInDB(req.body.phone, req.body.email)) {
-      errors = [
-        {
-          msg: "Phone No or Email already exists! Please register with different Phone No./Email",
-        },
-      ];
-      res.render("student_form", {
-        student: req.body,
-        errors: errors,
-      });
-      return;
-    } else {
-      // Data from form is valid.
-
+    }
+    // } else if (exists.then()) {
+    //   errors = [
+    //     {
+    //       msg: "Phone No or Email already exists! Please register with different Phone No./Email",
+    //     },
+    //   ];
+    //   res.render("student_form", {
+    //     student: req.body,
+    //     errors: errors,
+    //   });
+    //   return;
+    // } else {
+    // Data from form is valid.
+    else {
       uniqID = getUniqID(
         req.body.name,
         req.body.phone,
