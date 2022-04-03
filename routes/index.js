@@ -114,7 +114,7 @@ let event = "";
 router.get("/technical_events/:id", (req, res, next) => {
   let id = req.params.id;
   for (let te of te_events) {
-    console.log(id + " " + te.id);
+    
     if (te.id == id) {
       event = te;
       break;
