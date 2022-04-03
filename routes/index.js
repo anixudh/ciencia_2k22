@@ -4,6 +4,8 @@ const { body, validationResult } = require("express-validator");
 var Student = require("../models/student");
 const { DateTime } = require("luxon");
 var Student = require("../models/student");
+const te_events = require("../events/technical.json");
+//const { events } = require("../models/student");
 
 //var student_controller = require("../controllers/studentController");
 function getUniqID(name, phone, dob) {
@@ -13,13 +15,6 @@ function getUniqID(name, phone, dob) {
   return n1 + n3 + n2;
 }
 
-async function findInDB(phone, email) {
-  //flag = false;
-  const query = await Student.exists({
-    $or: [{ phone: phone }, { email: email }],
-  });
-  return query;
-}
 router.get("/", function (req, res, next) {
   res.render("index");
 });
@@ -54,11 +49,7 @@ router.post("/register", [
   async (req, res, next) => {
     // Extract the validation errors from a request.
     let errors = validationResult(req);
-    //let query;
-    // (async () => {
-    //   query = await findInDB(req.body.phone, req.body.email);
-    //   console.log("Hi");
-    // })();
+
     const query = await Student.exists({
       $or: [{ phone: req.body.phone }, { email: req.body.email }],
     });
@@ -75,30 +66,14 @@ router.post("/register", [
         errors: errors,
       });
       return;
-      //console.log(errors);
     } else if (!errors.isEmpty()) {
-      //console.log(errors);
       // There are errors. Render form again with sanitized values/errors messages.
       res.render("student_form", {
         student: req.body,
         errors: errors.array(),
       });
       return;
-    }
-    // } else if (exists.then()) {
-    //   errors = [
-    //     {
-    //       msg: "Phone No or Email already exists! Please register with different Phone No./Email",
-    //     },
-    //   ];
-    //   res.render("student_form", {
-    //     student: req.body,
-    //     errors: errors,
-    //   });
-    //   return;
-    // } else {
-    // Data from form is valid.
-    else {
+    } else {
       uniqID = getUniqID(
         req.body.name,
         req.body.phone,
@@ -129,4 +104,25 @@ router.get("/success", (req, res, next) =>
     uniqID: uniqID,
   })
 );
+
+router.get("/technical_events", (req, res, next) =>
+  res.render("technical_events", {
+    te_events: te_events,
+  })
+);
+let event = "";
+router.get("/technical_events/:id", (req, res, next) => {
+  let id = req.params.id;
+  for (let te of te_events) {
+    console.log(id + " " + te.id);
+    if (te.id == id) {
+      event = te;
+      break;
+    }
+  }
+  res.render("event", {
+    event: event,
+  });
+});
+
 module.exports = router;

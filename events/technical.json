@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "name": "Geek'd",
+    "organizers": "UPPE SHIVANI",
+    "branch": "CSE",
+    "rollno": "19B81A05U7",
+    "phone": 8688797641,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 2,
+    "name": "Techical quiz",
+    "organizers": "MURARI V V VINAYAKA RAO",
+    "branch": "IT",
+    "rollno": "20B81A12B4",
+    "phone": 9014130729,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 3,
+    "name": "Wooden model designing ",
+    "organizers": "P SRINITHYA",
+    "branch": "CIVIL",
+    "rollno": "19B81A0130",
+    "phone": 9121964203,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 4,
+    "name": "Crack the room",
+    "organizers": "MANUBOLU LIKHITHA",
+    "branch": "EIE-2nd",
+    "rollno": "20B81A1012",
+    "phone": 8341073962,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 5,
+    "name": "Puzzle me bro ",
+    "organizers": "KRITIKA AGARWAL",
+    "branch": "CSIT",
+    "rollno": "19B81A3319",
+    "phone": 6300917837,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 6,
+    "name": "Sherlock ohms",
+    "organizers": "NANDIPATI JYOTHSNA SANTOSHI",
+    "branch": "ECE",
+    "rollno": "20B81A0422",
+    "phone": 8309241221,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 7,
+    "name": "Taalash technical treasure hunt",
+    "organizers": "MUNGI ABHIRAM REDDY",
+    "branch": "CSIT",
+    "rollno": "19B81A3302",
+    "phone": 8106043869,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 8,
+    "name": "Aurdino RC Racing & Aurdino Snake (LED snake)",
+    "organizers": "VAMSHI , S.MD.SAHIL",
+    "branch": "ECE ",
+    "rollno": "20B.4B2",
+    "phone": 9177699969,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 9,
+    "name": "Webathon",
+    "organizers": "DEEPIKA",
+    "branch": "CSE",
+    "rollno": "18B81A0507",
+    "phone": 9989272306,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 10,
+    "name": "Code conquerer",
+    "organizers": "ABHINAV",
+    "branch": "CSE",
+    "rollno": "20B81A05Q2",
+    "phone": 8106502609,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 11,
+    "name": "Techtonic",
+    "organizers": "Shivathmika",
+    "branch": "CSE",
+    "rollno": "19B81A05B4",
+    "phone": 9908211424,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 12,
+    "name": "KBC",
+    "organizers": "SHASHI",
+    "branch": "ECE -4th",
+    "rollno": "18B81A04A6",
+    "phone": 9848762750,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 13,
+    "name": "Cross X",
+    "organizers": "AAKARSH",
+    "branch": "ECE -4th",
+    "rollno": "18B81A0461",
+    "phone": 8374478707,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 14,
+    "name": "Tech escape",
+    "organizers": "SREEKAR",
+    "branch": "ECE -4th",
+    "rollno": "18B81A0482",
+    "phone": 8639891849,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 15,
+    "name": "Tricky circuits",
+    "organizers": "SANDEEP",
+    "branch": "ECE -4th",
+    "rollno": "18B81A0483",
+    "phone": 6300593168,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 16,
+    "name": "Flash- Rapid fire whilw playing rubik's cube",
+    "organizers": "SOWMYA",
+    "branch": "EIE-2nd year",
+    "rollno": 1042,
+    "phone": 9502605793,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 17,
+    "name": "Technical truth or dare",
+    "organizers": "SHIVATHMIKA",
+    "branch": "EIE-2nd year",
+    "rollno": null,
+    "phone": 9985687669,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 18,
+    "name": "Breakout Clues ",
+    "organizers": "PRANATHI",
+    "branch": "ECE-2ND",
+    "rollno": "20B.433",
+    "phone": 9502732542,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 19,
+    "name": " Picture puzzle",
+    "organizers": "VAMSHI",
+    "branch": "CIVIL - 2nd",
+    "rollno": null,
+    "phone": 8096423215,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 20,
+    "name": "jenga related quiz",
+    "organizers": "KEERTHI",
+    "branch": "EIE-2nd",
+    "rollno": 1044,
+    "phone": 8688708730,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 21,
+    "name": "Auto - CAD",
+    "organizers": "HIMAJA",
+    "branch": "CIVIL - 2nd",
+    "rollno": null,
+    "phone": 9542500748,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 22,
+    "name": "Civil quiz ",
+    "organizers": "VAAGDEVI",
+    "branch": "CIVIL - 2nd",
+    "rollno": null,
+    "phone": 9059290168,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 23,
+    "name": "Logic gates",
+    "organizers": "SAHITHI",
+    "branch": "EIE-3rd",
+    "rollno": null,
+    "phone": 8519889949,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 24,
+    "name": "Model making",
+    "organizers": "AKHILA",
+    "branch": "CIVIL -",
+    "rollno": null,
+    "phone": null,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 25,
+    "name": "Battle bots",
+    "organizers": "ABDUL",
+    "branch": "ECE",
+    "rollno": "19B81A04C1",
+    "phone": 9000766261,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 26,
+    "name": "Line followers",
+    "organizers": "SAI KAUSHIK",
+    "branch": "ECE",
+    "rollno": null,
+    "phone": 9390755878,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 27,
+    "name": "Scrutinize",
+    "organizers": "ZIYA",
+    "branch": "MECH",
+    "rollno": null,
+    "phone": 9618697262,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 28,
+    "name": "Mistify",
+    "organizers": "SHRUTHI",
+    "branch": "MECH",
+    "rollno": "19B.327",
+    "phone": 9000016333,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 29,
+    "name": "Artificer",
+    "organizers": "SHYAM",
+    "branch": "MECH",
+    "rollno": "19b.331",
+    "phone": 8374202520,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 30,
+    "name": "Blind fold",
+    "organizers": "LASIYA",
+    "branch": "CIVIL - 3rd",
+    "rollno": "19B.113",
+    "phone": null,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 31,
+    "name": "Blinder and blink",
+    "organizers": "SHANTHAN",
+    "branch": "MECH",
+    "rollno": "19B.326",
+    "phone": 7893510095,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 32,
+    "name": "Finding resistors",
+    "organizers": "SAI TEJA",
+    "branch": "EEE",
+    "rollno": "20B.245",
+    "phone": 9676484877,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 33,
+    "name": "EEE quiz",
+    "organizers": "G. DILIP KUMAR",
+    "branch": "EEE",
+    "rollno": "20B.213",
+    "phone": 8639493309,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 34,
+    "name": "Instro Mania",
+    "organizers": "DINESH REDDY",
+    "branch": "EEE",
+    "rollno": "20B.0214",
+    "phone": 7337253636,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 35,
+    "name": "Circuit connection buzz",
+    "organizers": "G. SAI GANESH",
+    "branch": "EEE",
+    "rollno": "19B.273",
+    "phone": 8498089445,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 36,
+    "name": "Instro tambola",
+    "organizers": "M. RUSHIKESH",
+    "branch": "EEE",
+    "rollno": "19B.0364",
+    "phone": 8688749679,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 37,
+    "name": "Electrofun",
+    "organizers": "M.NIKITHA",
+    "branch": "ECE",
+    "rollno": "19B81A0428",
+    "phone": 9390642371,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 38,
+    "name": "Brick lifting",
+    "organizers": "K.SWETHA",
+    "branch": "CIVIL",
+    "rollno": "19B81A0132",
+    "phone": 8106510390,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 39,
+    "name": "Blind typing",
+    "organizers": "DEEKSHITHA",
+    "branch": "CSE-AI ML ",
+    "rollno": null,
+    "phone": 8179253323,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  },
+  {
+    "id": 40,
+    "name": "Blind Coding",
+    "organizers": "NIKHIL",
+    "branch": "CSIT",
+    "rollno": "19B81A3327",
+    "phone": 7416510464,
+    "desc": " insert desc here",
+    "img": "../assets/logos/ciencia.png"
+  }
+]
