@@ -1,0 +1,79 @@
+[
+ {
+  "id": 1,
+  "name": "4DFX",
+  "organizers": "Ganesh",
+  "branch": "EEE",
+  "rollno": "19B81A0211",
+  "phone": 7013154855,
+  "desc": "insert desc here",
+  "img": "..\/assets\/logos\/ciencia.png",
+  "venue": "TBD"
+ },
+ {
+  "id": 2,
+  "name": "BOX CRICKET",
+  "organizers": "Varshit",
+  "branch": "IT",
+  "rollno": "20B81A1222",
+  "phone": 7801046605,
+  "desc": "insert desc here",
+  "img": "..\/assets\/logos\/ciencia.png",
+  "venue": "TBD"
+ },
+ {
+  "id": 3,
+  "name": "TUG OF WAR AND WATER GAMES",
+  "organizers": "Sravanth",
+  "branch": "EIE",
+  "rollno": "20B81A0043",
+  "phone": 8919293030,
+  "desc": "insert desc here",
+  "img": "..\/assets\/logos\/ciencia.png",
+  "venue": "TBD"
+ },
+ {
+  "id": 4,
+  "name": "SUNN TERE LIYE & PHOTO BOOTH",
+  "organizers": "Manikanta",
+  "branch": "ECE",
+  "rollno": "20B81A0476",
+  "phone": 9640361000,
+  "desc": "insert desc here",
+  "img": "..\/assets\/logos\/ciencia.png",
+  "venue": "TBD"
+ },
+ {
+  "id": 5,
+  "name": "TREASURE HUNT",
+  "organizers": "Sudheer",
+  "branch": "CSE",
+  "rollno": "20B81A0512",
+  "phone": 9573446104,
+  "desc": "insert desc here",
+  "img": "..\/assets\/logos\/ciencia.png",
+  "venue": "TBD"
+ },
+ {
+  "id": 6,
+  "name": "FUN ZONE",
+  "organizers": "Srinath",
+  "branch": "MECH",
+  "rollno": "19B81A0329",
+  "phone": 9133609506,
+  "desc": "insert desc here",
+  "img": "..\/assets\/logos\/ciencia.png",
+  "venue": "TBD"
+ },
+ {
+  "id": 7,
+  "name": "HAUNTED HOUSE",
+  "organizers": "Deva Rishitha",
+  "branch": "CIVIL",
+  "rollno": "19B81A0118",
+  "phone": 9059029325,
+  "desc": "insert desc here",
+  "img": "..\/assets\/logos\/ciencia.png",
+  "venue": "TBD"
+ }
+]

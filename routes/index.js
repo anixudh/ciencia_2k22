@@ -5,6 +5,8 @@ var Student = require("../models/student");
 const { DateTime } = require("luxon");
 var Student = require("../models/student");
 const te_events = require("../events/technical.json");
+const nte_events = require("../events/non_technical.json");
+const sp_events = require("../events/special.json");
 //const { events } = require("../models/student");
 
 //var student_controller = require("../controllers/studentController");
@@ -110,11 +112,20 @@ router.get("/technical_events", (req, res, next) =>
     te_events: te_events,
   })
 );
+router.get("/non-technical_events", (req, res, next) =>
+  res.render("non-technical_events", {
+    nte_events: nte_events,
+  })
+);
+router.get("/special_events", (req, res, next) =>
+  res.render("special_events", {
+    sp_events: sp_events,
+  })
+);
 let event = "";
 router.get("/technical_events/:id", (req, res, next) => {
   let id = req.params.id;
   for (let te of te_events) {
-    
     if (te.id == id) {
       event = te;
       break;
@@ -125,4 +136,29 @@ router.get("/technical_events/:id", (req, res, next) => {
   });
 });
 
+router.get("/non-technical_events/:id", (req, res, next) => {
+  let id = req.params.id;
+  for (let nte of nte_events) {
+    if (nte.id == id) {
+      event = nte;
+      break;
+    }
+  }
+  res.render("event", {
+    event: event,
+  });
+});
+
+router.get("/special_events/:id", (req, res, next) => {
+  let id = req.params.id;
+  for (let sp of sp_events) {
+    if (sp.id == id) {
+      event = sp;
+      break;
+    }
+  }
+  res.render("event", {
+    event: event,
+  });
+});
 module.exports = router;
