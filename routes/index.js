@@ -122,6 +122,10 @@ router.get("/special_events", (req, res, next) =>
     sp_events: sp_events,
   })
 );
+router.get("/paper_presentation", (req, res, next) =>
+  res.render("paper_presentation")
+);
+router.get("/project_expo", (req, res, next) => res.render("project_expo"));
 let event = "";
 router.get("/technical_events/:id", (req, res, next) => {
   let id = req.params.id;
