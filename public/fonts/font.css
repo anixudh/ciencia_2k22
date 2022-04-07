@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'CGOmega';
+  src: url('CGOmega.svg#CGOmega') format('svg'),
+       url('CGOmega.ttf') format('truetype'),
+       url('CGOmega.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cgor45w';
+  src: url('cgor45w.eot');
+  src: url('cgor45w.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

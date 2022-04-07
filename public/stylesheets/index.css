@@ -6,8 +6,8 @@
   width: 80px;
 }
 #ciencia-logo-inv {
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
 }
 #page-intro {
   background-image: url("../assets/bg/djnight-blur.jpg");
@@ -27,7 +27,7 @@
   color: white;
 }
 .about-card {
-  height: 580px;
+  height: 600px;
   width: 75%;
   padding: 50px;
   border: 1px solid grey;
