@@ -165,4 +165,31 @@ router.get("/special_events/:id", (req, res, next) => {
     event: event,
   });
 });
+
+router.get("/search", (req, res, next) =>
+  res.render("search", {
+    details: "",
+  })
+);
+
+router.post("/search", [
+  body("searchId").trim().isLength(8),
+
+  async (req, res, next) => {
+    let errors = validationResult(req);
+    if (errors) {
+      res.render("search", {
+        details: "",
+        errors: errors,
+      });
+    } else {
+      const details = await Student.findOne({ uniqID: req.body.searchID });
+      console.log(req.body.searchID);
+      res.render("search", {
+        details: details,
+      });
+    }
+  },
+]);
+
 module.exports = router;
