@@ -41,8 +41,24 @@
           <button type="submit" class="btn btn-outline-primary">search</button>
         </div>
       </form>
+      <% if(errors){ %>
+        <div class="card alert alert-danger alert-dismissible fade show">
+          <%=errors%>
+        </div>
+        <% } %>
       <% if(details){ %>
-      <div><% console.log(details)%></div>
+        <div class="card text-center w-100 bg-grey shadow">
+         <div class="card-block">
+            <h4 class="card-title"><%= details.uniqID %></h4>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Name: <%=details.name %></li>
+            <li class="list-group-item">Phone: <%=details.phone %></li>
+            <li class="list-group-item">Email: <%=details.email%></li>
+            <li class="list-group-item">DOB: <%=details.dob%></li>
+            <li class="list-group-item">Gender: <%=details.gender%></li>
+          </ul>
+        </div>
       <% } %>
     </div>
   </body>

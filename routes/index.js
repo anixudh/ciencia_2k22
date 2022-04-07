@@ -168,28 +168,28 @@ router.get("/special_events/:id", (req, res, next) => {
 
 router.get("/search", (req, res, next) =>
   res.render("search", {
-    details: "",
+    details: null,
+    errors:null,
   })
 );
 
-router.post("/search", [
-  body("searchId").trim().isLength(8),
-
-  async (req, res, next) => {
-    let errors = validationResult(req);
-    if (errors) {
-      res.render("search", {
-        details: "",
-        errors: errors,
-      });
-    } else {
-      const details = await Student.findOne({ uniqID: req.body.searchID });
-      console.log(req.body.searchID);
-      res.render("search", {
-        details: details,
-      });
+router.post("/search", (req,res,next)=>{
+  Student.findOne({uniqID: req.body.searchId}).exec((err,result)=>{
+    if(err) return next(err);
+    console.log(result);
+    if(result==null){
+      res.render("search",{
+        details:null,
+        errors: "Not found",
+      })
     }
-  },
-]);
+    else{
+      res.render("search",{
+        details:result,
+        errors:null,
+      })
+    }
+  })
+})
 
 module.exports = router;
