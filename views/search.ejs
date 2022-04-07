@@ -28,18 +28,38 @@
   <body class="d-flex flex-column align-items-center bg-info bg-gradient">
     <div class="card text-center w-25 bg-grey shadow">
       <form method="POST" action="">
-        <div class="input-group">
-          <input
-            type="search"
+        <% if(login){ %>
+          <div class="input-group">
+            <input
+              type="search"
+              class="form-control rounded"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="search-addon"
+              name="searchId"
+            />
+            <button type="submit" class="btn btn-outline-primary">search</button>
+          </div>
+        <% }%>
+        <% if(!login){ %>
+          <div class="input-group">Username:  <input
+            type="username"
             class="form-control rounded"
-            placeholder="Search"
-            aria-label="Search"
-            aria-describedby="search-addon"
-            name="searchId"
-          />
-          <% console.log() %>
-          <button type="submit" class="btn btn-outline-primary">search</button>
-        </div>
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="username-addon"
+            name="username"
+          /></div>
+          <div class="input-group">Password:  <input
+            type="password"
+            class="form-control rounded"
+            placeholder="Password"
+            aria-label="Password"
+            aria-describedby="password-addon"
+            name="password"
+          /></div>
+          <button type="submit" class="btn btn-outline-primary">Login</button>
+        <% }%>  
       </form>
       <% if(errors){ %>
         <div class="card alert alert-danger alert-dismissible fade show">

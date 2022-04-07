@@ -166,30 +166,49 @@ router.get("/special_events/:id", (req, res, next) => {
   });
 });
 
+let login= false;
 router.get("/search", (req, res, next) =>
+
   res.render("search", {
-    details: null,
-    errors:null,
-  })
+      details: null,
+      errors:null,
+      login: login,
+    })
+  
 );
 
 router.post("/search", (req,res,next)=>{
-  Student.findOne({uniqID: req.body.searchId}).exec((err,result)=>{
-    if(err) return next(err);
-    console.log(result);
-    if(result==null){
+  if(!login){
+    login = req.body.username==process.env.username && req.body.password==process.env.password;
+    if(!login){
       res.render("search",{
         details:null,
-        errors: "Not found",
+        errors: "Invalid username/password",
+        login: login,
       })
     }
-    else{
-      res.render("search",{
-        details:result,
-        errors:null,
-      })
-    }
-  })
+    else res.redirect("/search");
+  }
+  else{
+    Student.findOne({uniqID: req.body.searchId}).exec((err,result)=>{
+      if(err) return next(err);
+      console.log(result);
+      if(result==null){
+        res.render("search",{
+          details:null,
+          errors: "Not found",
+          login: login,
+        })
+      }
+      else{
+        res.render("search",{
+          details:result,
+          errors:null,
+          login: login,
+        })
+      }
+    })
+  }
 })
 
 module.exports = router;
