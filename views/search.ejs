@@ -27,7 +27,8 @@
   </head>
   <body class="d-flex flex-column align-items-center bg-info bg-gradient">
     <div class="card text-center w-25 bg-grey shadow">
-      <form method="POST" action="/search">
+      <form method="POST" action="">
+        <% if(login){ %>
         <div class="input-group">
           <input
             type="search"
@@ -37,12 +38,51 @@
             aria-describedby="search-addon"
             name="searchId"
           />
-          <% console.log() %>
           <button type="submit" class="btn btn-outline-primary">search</button>
         </div>
+        <% }%> <% if(!login){ %>
+        <div class="input-group">
+          Username:
+          <input
+            type="username"
+            class="form-control rounded"
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="username-addon"
+            name="username"
+          />
+        </div>
+        <div class="input-group">
+          Password:
+          <input
+            type="password"
+            class="form-control rounded"
+            placeholder="Password"
+            aria-label="Password"
+            aria-describedby="password-addon"
+            name="password"
+          />
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Login</button>
+        <% }%>
       </form>
-      <% if(details){ %>
-      <div><% console.log(details)%></div>
+      <% if(errors){ %>
+      <div class="card alert alert-danger alert-dismissible fade show">
+        <%=errors%>
+      </div>
+      <% } %> <% if(details){ %>
+      <div class="card text-center w-100 bg-grey shadow">
+        <div class="card-block">
+          <h4 class="card-title"><%= details.uniqID %></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Name: <%=details.name %></li>
+          <li class="list-group-item">Phone: <%=details.phone %></li>
+          <li class="list-group-item">Email: <%=details.email%></li>
+          <li class="list-group-item">DOB: <%=details.dob%></li>
+          <li class="list-group-item">Gender: <%=details.gender%></li>
+        </ul>
+      </div>
       <% } %>
     </div>
   </body>
