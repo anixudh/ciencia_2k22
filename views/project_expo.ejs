@@ -33,14 +33,17 @@
 
         <ul class="nav nav-navbar">
           <li class="nav-item">
-            <a class="nav-link" href="/#about">About</a>
+            <a class="nav-link" href="/" id="nav-home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#about" id="nav-about">About</a>
           </li>
           <div class="dropdown me-3">
             <a
               class="btn btn-secondary dropdown-toggle bg-black text-primary"
               href="#"
               role="button"
-              id="dropdownMenuLink"
+              id="dropdownMenuLink-conv"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
@@ -49,7 +52,7 @@
 
             <ul
               class="dropdown-menu bg-black"
-              aria-labelledby="dropdownMenuLink"
+              aria-labelledby="dropdownMenuLink-conv"
             >
               <li>
                 <a class="dropdown-item text-primary" href="/#faculty-conveners"
@@ -80,9 +83,7 @@
               aria-labelledby="dropdownMenuLink"
             >
               <li>
-                <a
-                  class="dropdown-item text-primary"
-                  href="/technical_events"
+                <a class="dropdown-item text-primary" href="/technical_events"
                   >Technical Events</a
                 >
               </li>
@@ -94,33 +95,27 @@
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item text-primary"
-                  href="/special_events"
+                <a class="dropdown-item text-primary" href="/special_events"
                   >Special Events</a
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item text-primary"
-                  href="/paper_presentation"
+                <a class="dropdown-item text-primary" href="/paper_presentation"
                   >Paper Presentation</a
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item text-primary"
-                  href="/project_expo"
+                <a class="dropdown-item text-primary" href="/project_expo"
                   >Project Expo</a
                 >
               </li>
             </ul>
           </div>
           <li class="nav-item">
-            <a class="nav-link" href="/#gallery">Gallery</a>
+            <a class="nav-link" href="/#gallery" id="nav-gallery">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#contact-us">Contact Us</a>
+            <a class="nav-link" href="#contact-us" id="nav-cu">Contact Us</a>
           </li>
           <li class="nav-item">
             <a href="/register" class="nav-link">Register!</a>
@@ -128,7 +123,6 @@
         </ul>
       </nav>
 
-      </nav>
     </div>
 
     <div class="text-primary">Project Expo</div>
