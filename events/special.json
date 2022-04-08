@@ -7,7 +7,7 @@
   "rollno": "19B81A0211",
   "phone": 7013154855,
   "desc": "insert desc here",
-  "img": "..\/assets\/logos\/ciencia.png",
+  "img": "..\/assets\/special\/4DFX.png",
   "venue": "TBD"
  },
  {
@@ -18,7 +18,7 @@
   "rollno": "20B81A1222",
   "phone": 7801046605,
   "desc": "insert desc here",
-  "img": "..\/assets\/logos\/ciencia.png",
+  "img": "../assets/special/BOX_CRICKET.png",
   "venue": "TBD"
  },
  {
@@ -29,7 +29,7 @@
   "rollno": "20B81A0043",
   "phone": 8919293030,
   "desc": "insert desc here",
-  "img": "..\/assets\/logos\/ciencia.png",
+  "img": "../assets/special/TUG_OF_WAR.png",
   "venue": "TBD"
  },
  {
@@ -40,7 +40,7 @@
   "rollno": "20B81A0476",
   "phone": 9640361000,
   "desc": "insert desc here",
-  "img": "..\/assets\/logos\/ciencia.png",
+  "img": "../assets/special/SUNNTERELIYE.png",
   "venue": "TBD"
  },
  {
@@ -51,7 +51,7 @@
   "rollno": "20B81A0512",
   "phone": 9573446104,
   "desc": "insert desc here",
-  "img": "..\/assets\/logos\/ciencia.png",
+  "img": "../assets/special/TREASURE_HUNT.png",
   "venue": "TBD"
  },
  {
@@ -62,7 +62,7 @@
   "rollno": "19B81A0329",
   "phone": 9133609506,
   "desc": "insert desc here",
-  "img": "..\/assets\/logos\/ciencia.png",
+  "img": "../assets/special/FUN_ZONE.png",
   "venue": "TBD"
  },
  {
@@ -73,7 +73,7 @@
   "rollno": "19B81A0118",
   "phone": 9059029325,
   "desc": "insert desc here",
-  "img": "..\/assets\/logos\/ciencia.png",
+  "img": "../assets/special/HAUNTED_HOUSE.png",
   "venue": "TBD"
  }
 ]
