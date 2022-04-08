@@ -40,14 +40,17 @@
 
         <ul class="nav nav-navbar">
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#" id="nav-home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" id="nav-about">About</a>
           </li>
           <div class="dropdown me-3">
             <a
               class="btn btn-secondary dropdown-toggle bg-black text-primary"
               href="#"
               role="button"
-              id="dropdownMenuLink"
+              id="dropdownMenuLink-conv"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
@@ -56,7 +59,7 @@
 
             <ul
               class="dropdown-menu bg-black"
-              aria-labelledby="dropdownMenuLink"
+              aria-labelledby="dropdownMenuLink-conv"
             >
               <li>
                 <a class="dropdown-item text-primary" href="#faculty-conveners"
@@ -116,10 +119,10 @@
             </ul>
           </div>
           <li class="nav-item">
-            <a class="nav-link" href="/#gallery">Gallery</a>
+            <a class="nav-link" href="/#gallery" id="nav-gallery">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact-us">Contact Us</a>
+            <a class="nav-link" href="#contact-us" id="nav-cu">Contact Us</a>
           </li>
           <li class="nav-item">
             <a href="/register" class="nav-link">Register!</a>
@@ -132,16 +135,17 @@
         class="d-flex flex-column align-items-center justify-content-center"
       >
         <h3>
-          <div class="text-center">
-            CVR COLLEGE OF ENGINEERING <br />PRESENTS
+          <div class="text-center d-flex flex-column">
+            <h3>CVR COLLEGE OF ENGINEERING </h3>
+            <h5>PRESENTS</h5>
           </div>
         </h3>
-        <img src="assets/logos/C2k22B.png" />
-        <h3>⚡ A National level Science and Technical fest</h3>
-        <div id="page-intro-det" class="d-flex">
-          <h4>⚡ 12-13 APRIL</h4>
+        <img src="assets/logos/C2k22B.png" id="main-ciencia-logo"/>
+        
+        <div id="page-intro-det" class="d-flex flex-column align-items-center">
+          <h5>⚡ A National level Science and Technical fest</h5>
+          <h5>⚡ APRIL 12-13, 2022</h5>
           <!-- <h4>⚡ CVR College</h4> -->
-          <h4>⚡ 2022 EDITION</h4>
         </div>
       </div>
       <div
@@ -152,7 +156,7 @@
 
         <div
           id="about-college"
-          class="about-card d-flex flex-column justify-content-between"
+          class="about-card d-flex flex-column justify-content-around"
         >
           <h4>College</h4>
           <div class="d-flex justify-content-between p-5">
@@ -166,7 +170,7 @@
                 the few colleges.
               </p>
 
-              <ul class="text-right p-0">
+              <!-- <ul class="text-right p-0">
                 The mission of the institute is
                 <li>
                   To excel in providing quality education at under graduate and
@@ -185,7 +189,7 @@
                   To nurture students towards holistic development with human
                   values and ethics.
                 </li>
-              </ul>
+              </ul> -->
             </div>
             <!-- <img id="main-gate" class="m-2" src="assets/misc/main-gate.jpg" /> -->
           </div>
@@ -205,9 +209,7 @@
             <p>
               CIENCIA a national level technical symposium, organized by CVR
               College of Engineering has over the years diversified into
-              magniloquent phenomenon. CIENCIA, which has been one of the most
-              innovative and biggest technical fests in the country has come
-              back bigger and better. A great number of programming events,
+              magniloquent phenomenon. A great number of programming events,
               analytical events, electrical and electronic events are to follow
               and there's also the Technical Quiz where you can test your might
               against students from various engineering colleges all over the
@@ -221,24 +223,24 @@
         <div id="about-head" class="about-card">
           <h4 style="margin: 20px">Governing Body</h4>
           <br />
-          <div class="d-flex justify-content-around">
+          <div class="d-flex justify-content-around" id="gov-body">
             <div id="ch" class="fac-main-card">
               <img src="assets/conveners/ch.jpeg" class="fac-main-img" />
-              <div class="fac-main-desc">
+              <h6 class="fac-main-desc">
                 Dr. Raghava Cherabuddi <br />Chairman
-              </div>
+              </h6>
             </div>
             <div id="p" class="fac-main-card">
               <img src="assets/conveners/p.jpeg" class="fac-main-img" />
-              <div class="fac-main-desc">
+              <h6 class="fac-main-desc">
                 Dr. K S Nayanatara <br />Principal
-              </div>
+              </h6>
             </div>
             <div id="vp" class="fac-main-card">
               <img src="assets/conveners/vp.jpg" class="fac-main-img" />
-              <div class="fac-main-desc">
-                Prof. L C Shiva Reddy <br />Vice Principal
-              </div>
+              <h6 class="fac-main-desc">
+                Prof. L C Siva Reddy <br />Vice Principal
+              </h6>
             </div>
           </div>
         </div>
@@ -257,17 +259,17 @@
             id="sc"
           >
             <img src="assets/conveners/nnarayana.JPG" class="conve-img" />
-            <h4>Dr. N Narayana <br />Convener</h4>
+            <h6>Dr. N Narayana <br />Convener</h6>
             <div></div>
           </div>
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between" id="fac-conv-bot">
             <div class="conve-card-main" id="sc">
               <img src="assets/conveners/kshishdhar.jpeg" class="conve-img" />
-              <h4>Dr. K Shishidar <br />Co-Convener</h4>
+              <h6>Dr. K Shashidar <br />Co-Convener</h6>
             </div>
             <div class="conve-card-main" id="sc">
               <img src="assets/conveners/hv.jpeg" class="conve-img" />
-              <h4>Dr. S Harivardhagini <br />Co-Convener</h4>
+              <h6>Dr. S Harivardhagini <br />Co-Convener</h6>
             </div>
           </div>
         </div>
@@ -284,7 +286,7 @@
             <h4>Siri Chandan <br />Convener</h4>
             <div></div>
           </div>
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between" id="stud-conv-bot">
             <div class="conve-card-main">
               <img
                 src="assets/student-conveners/RitikaN.jpeg"
@@ -384,38 +386,8 @@
           <h3 style="margin: 30px">Contact us</h3>
           <hr />
         </div>
-        <div class="d-flex justify-content-center">
-          <div class="mapouter" id="map">
-            <div class="gmap_canvas">
-              <iframe
-                width="500"
-                height="443"
-                id="gmap_canvas"
-                src="https://maps.google.com/maps?q=CVR%20College%20of%20Engineering&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0"
-              ></iframe
-              ><br /><style>
-                .mapouter {
-                  position: relative;
-                  text-align: right;
-                  height: 443px;
-                  width: 500px;
-                }</style
-              ><a href="https://www.embedgooglemap.net"
-                >custom google maps embed</a
-              ><style>
-                .gmap_canvas {
-                  overflow: hidden;
-                  background: none !important;
-                  height: 350px;
-                  width: 400px;
-                }
-              </style>
-            </div>
-          </div>
+        <div class="d-flex justify-content-center" id="cu-bot">
+          
           <div id="address" style="margin: 10px; text-align: center">
             CVR College Of Engineering, <br />
             Vastunagar, Mangalpalli (V), Ibrahimpatnam (M), <br />
@@ -442,6 +414,41 @@
               </svg>
               ciencia_flashmob2k22
             </a>
+          </div>
+          <div class="mapouter" id="map">
+            <div class="gmap_canvas">
+              <iframe
+                width="400"
+                height="400"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=CVR%20College%20of%20Engineering&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe
+              ><br /><style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 400px;
+                  width: 400px;
+                }</style
+              ><style>
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 400px;
+                  width: 400px;
+                }
+                 /* @media only screen and (max-width: 650px){
+                .gmap_canvas {
+                  height: 200px;
+                  width: 200px;
+                } 
+                } */
+              </style>
+            </div>
           </div>
         </div>
       </div>
