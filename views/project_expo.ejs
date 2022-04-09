@@ -24,111 +24,105 @@
   <body class="bg-dark">
     <div class="container-fluid">
       <nav
-        class="navbar navbar-dark-sm navbar-expand bg-black sticky-top d-flex justify-content-between"
-      >
-        <div>
-          <img id="cvr-logo" src="assets/logos/cvr.jpeg" />
-          <img id="ciencia-logo-inv" src="assets/logos/Logo-Loop.gif" />
+      class="navbar navbar-dark-sm navbar-expand bg-black sticky-top d-flex justify-content-between"
+    >
+      <div>
+        <img id="cvr-logo" src="assets/logos/cvr.jpeg" />
+        <img id="ciencia-logo-inv" src="assets/logos/Logo-Loop.gif" />
+      </div>
+
+      <ul class="nav nav-navbar">
+        <li class="nav-item">
+          <a class="nav-link" href="/" id="nav-home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#about" id="nav-about">About</a>
+        </li>
+        <div class="dropdown me-3">
+          <a
+            class="btn btn-secondary dropdown-toggle bg-black text-primary"
+            href="#"
+            role="button"
+            id="dropdownMenuLink-conv"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Conveners
+          </a>
+
+          <ul
+            class="dropdown-menu bg-black"
+            aria-labelledby="dropdownMenuLink-conv"
+          >
+            <li>
+              <a class="dropdown-item text-primary" href="/#faculty-conveners"
+                >Faculty Conveners</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item text-primary" href="/#student-conveners"
+                >Student Conveners</a
+              >
+            </li>
+          </ul>
         </div>
+        <div class="dropdown">
+          <a
+            class="btn btn-secondary dropdown-toggle bg-black text-primary"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Events
+          </a>
 
-        <ul class="nav nav-navbar">
-          <li class="nav-item">
-            <a class="nav-link" href="/#about">About</a>
-          </li>
-          <div class="dropdown me-3">
-            <a
-              class="btn btn-secondary dropdown-toggle bg-black text-primary"
-              href="#"
-              role="button"
-              id="dropdownMenuLink"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Conveners
-            </a>
+          <ul
+            class="dropdown-menu bg-black"
+            aria-labelledby="dropdownMenuLink"
+          >
+            <li>
+              <a class="dropdown-item text-primary" href="/technical_events"
+                >Technical Events</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item text-primary"
+                href="/non-technical_events"
+                >Non-Technical Events</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item text-primary" href="/special_events"
+                >Special Events</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item text-primary" href="/paper_presentation"
+                >Paper Presentation</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item text-primary" href="/project_expo"
+                >Project Expo</a
+              >
+            </li>
+          </ul>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" href="/#gallery" id="nav-gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact-us" id="nav-cu">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="/register" class="nav-link">Register!</a>
+        </li>
+      </ul>
+    </nav>
 
-            <ul
-              class="dropdown-menu bg-black"
-              aria-labelledby="dropdownMenuLink"
-            >
-              <li>
-                <a class="dropdown-item text-primary" href="/#faculty-conveners"
-                  >Faculty Conveners</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item text-primary" href="/#student-conveners"
-                  >Student Conveners</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="dropdown">
-            <a
-              class="btn btn-secondary dropdown-toggle bg-black text-primary"
-              href="#"
-              role="button"
-              id="dropdownMenuLink"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Events
-            </a>
-
-            <ul
-              class="dropdown-menu bg-black"
-              aria-labelledby="dropdownMenuLink"
-            >
-              <li>
-                <a
-                  class="dropdown-item text-primary"
-                  href="/technical_events"
-                  >Technical Events</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item text-primary"
-                  href="/non-technical_events"
-                  >Non-Technical Events</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item text-primary"
-                  href="/special_events"
-                  >Special Events</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item text-primary"
-                  href="/paper_presentation"
-                  >Paper Presentation</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item text-primary"
-                  href="/project_expo"
-                  >Project Expo</a
-                >
-              </li>
-            </ul>
-          </div>
-          <li class="nav-item">
-            <a class="nav-link" href="/#gallery">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/#contact-us">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a href="/register" class="nav-link">Register!</a>
-          </li>
-        </ul>
-      </nav>
-
-      </nav>
     </div>
 
     <div class="h1 text-center text-primary">Project Expo</div>
@@ -153,7 +147,7 @@
           <p class="card-text">Participation certification will be provided</p>
           <div class="card-footer">
               <p>venue: PG block - 101,102</p>
-          </>
+          </div>
         </div>
       </div>
   </body>
