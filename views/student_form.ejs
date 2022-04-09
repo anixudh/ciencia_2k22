@@ -22,11 +22,148 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-   
+    <style>
+      #cvr-logo {
+  height: 80px;
+  width: 80px;
+}
+#ciencia-logo-inv {
+  height: 100px;
+  width: 100px;
+}
+      @media only screen and (max-width: 922px){
+html,body{
+  overflow-x: hidden;
+}
+#dropdownMenuLink-conv{
+  display: none;
+}
+#dropdownMenuLink-cu{
+  display: none;
+}
+#nav-about{
+  display: none;
+}
+#nav-gallery{
+  display: none;
+}
+#nav-cu{
+  display: none;
+}
+#cvr-logo {
+  height:50px;
+  width: 50px;
+}
+#ciencia-logo-inv {
+  height: 50px;
+  width: 50px;
+}
+      }
+    </style>
     <title>Registration</title>
   </head>
 
   <body class="bg-dark">
+    <nav
+        class="navbar navbar-dark-sm navbar-expand bg-black sticky-top d-flex justify-content-between"
+      >
+        <div>
+          <img id="cvr-logo" src="assets/logos/cvr.jpeg" />
+          <img id="ciencia-logo-inv" src="assets/logos/Logo-Loop.gif" />
+        </div>
+
+        <ul class="nav nav-navbar">
+          <li class="nav-item">
+            <a class="nav-link" href="/" id="nav-home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#about" id="nav-about">About</a>
+          </li>
+          <div class="dropdown me-3">
+            <a
+              class="btn btn-secondary dropdown-toggle bg-black text-primary"
+              href="#"
+              role="button"
+              id="dropdownMenuLink-conv"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Conveners
+            </a>
+
+            <ul
+              class="dropdown-menu bg-black"
+              aria-labelledby="dropdownMenuLink-conv"
+            >
+              <li>
+                <a class="dropdown-item text-primary" href="/#faculty-conveners"
+                  >Faculty Conveners</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary" href="/#student-conveners"
+                  >Student Conveners</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary dropdown-toggle bg-black text-primary"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Events
+            </a>
+
+            <ul
+              class="dropdown-menu bg-black"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <li>
+                <a class="dropdown-item text-primary" href="/technical_events"
+                  >Technical Events</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item text-primary"
+                  href="/non-technical_events"
+                  >Non-Technical Events</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary" href="/special_events"
+                  >Special Events</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary" href="/paper_presentation"
+                  >Paper Presentation</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary" href="/project_expo"
+                  >Project Expo</a
+                >
+              </li>
+            </ul>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="/#gallery" id="nav-gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us" id="nav-cu">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="/register" class="nav-link">Register!</a>
+          </li>
+        </ul>
+      </nav>
+
     <section class="vh-100 gradient-custom">
       <div class="container py-5 h-100">
         <div class="row justify-content-center align-items-center h-100">
@@ -39,7 +176,7 @@
                 <div class="d-flex flex-column align-items-center">
                   <img
                     src="assets/logos/C2k22B.png"
-                    style="height: 150px; width: 500px"
+                    style="height: 150px; width: 350px"
                   />
                   <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
                 </div>

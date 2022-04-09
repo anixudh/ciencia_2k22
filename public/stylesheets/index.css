@@ -1,3 +1,7 @@
+@font-face {
+  font-family: CG-omega;
+  src: url(../fonts/CGOmega.ttf);
+}
 .container-fluid {
   padding: 0;
 }
@@ -111,5 +115,153 @@
   color: white;
   font-size: 24px;
 }
-/* 
-AsDe123d */
+
+#cu-details{
+  margin: 15px;
+}
+#cvr-font-home{
+  font-size: 5rem; 
+  font-family: CG-omega
+}
+@media only screen and (max-width: 922px){
+html,body{
+  overflow-x: hidden;
+}
+#dropdownMenuLink-conv{
+  display: none;
+}
+#dropdownMenuLink-cu{
+  display: none;
+}
+#nav-about{
+  display: none;
+}
+#nav-gallery{
+  display: none;
+}
+#nav-cu{
+  display: none;
+}
+#cvr-logo {
+  height:50px;
+  width: 50px;
+}
+#ciencia-logo-inv {
+  height: 50px;
+  width: 50px;
+}
+
+#page-intro{
+  height: 600px;
+}
+
+#main-ciencia-logo{
+  width: 200px;
+}
+
+.about-card{
+  height: 400px;
+  font-size: 10px;
+  padding: 3px;
+  width: 88%;
+}
+#ciencia-logo {
+  height: 100px;
+}
+
+#acc-logo{
+  height: 30px;
+  width: 40px;
+}
+#faculty-conveners{
+  width: 300px;
+}
+.fac-main-img{
+  height: 100px;
+}
+
+.conve-img{
+  height: 100px;
+}
+
+.conve-card{
+  width: 100px;
+  padding: 2px;
+  margin: 0px;
+}
+
+.conve-card-main#sc{
+  width: 150px;
+  margin: 0px;
+  padding: 0px;
+}
+.conve-card-main{
+  width: 100px;
+  height: 75px;
+}
+#gov-body{
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  /* justify-content: space-between; */
+}
+.about-card#about-head{
+  height: 600px;
+  
+}
+.fac-main-card{
+  width:75%;
+  margin: 5px;
+}
+.conve-card-main#sc{
+  height: 175px;
+}
+#faculty-conveners{
+  justify-content: space-around!important;
+  height: 600px;
+  width: 95%;
+}
+div#sc.conve-card-main{
+  margin: 8px;
+}
+#student-conveners{
+  justify-content: center!important;
+  height: 1000px;  
+  width: 95%;
+}
+#stud-conv-bot{
+  flex-direction: column;
+}
+#stud-conv-bot .conve-card-main{
+  height: 170px;
+  width: 165px;
+}
+
+#contact-us{
+  font-size: 10px;
+
+}
+#cu-bot{
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#page-intro-det{
+  font-size: small;
+  width: 75%;
+}
+#cvr-font-home{
+  font-size: 2rem;
+}
+}
+
+#insta {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-size: 30px; /* change this to change the size*/
+  
+}

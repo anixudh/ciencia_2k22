@@ -166,30 +166,49 @@ router.get("/special_events/:id", (req, res, next) => {
   });
 });
 
+let login= false;
 router.get("/search", (req, res, next) =>
+
   res.render("search", {
-    details: "",
-  })
+      details: null,
+      errors:null,
+      login: login,
+    })
+  
 );
 
-router.post("/search", [
-  body("searchId").trim().isLength(8),
-
-  async (req, res, next) => {
-    let errors = validationResult(req);
-    if (errors) {
-      res.render("search", {
-        details: "",
-        errors: errors,
-      });
-    } else {
-      const details = await Student.findOne({ uniqID: req.body.searchID });
-      console.log(req.body.searchID);
-      res.render("search", {
-        details: details,
-      });
+router.post("/search", (req,res,next)=>{
+  if(!login){
+    login = req.body.username==process.env.username && req.body.password==process.env.password;
+    if(!login){
+      res.render("search",{
+        details:null,
+        errors: "Invalid username/password",
+        login: login,
+      })
     }
-  },
-]);
+    else res.redirect("/search");
+  }
+  else{
+    Student.findOne({uniqID: req.body.searchId}).exec((err,result)=>{
+      if(err) return next(err);
+      console.log(result);
+      if(result==null){
+        res.render("search",{
+          details:null,
+          errors: "Not found",
+          login: login,
+        })
+      }
+      else{
+        res.render("search",{
+          details:result,
+          errors:null,
+          login: login,
+        })
+      }
+    })
+  }
+})
 
 module.exports = router;
