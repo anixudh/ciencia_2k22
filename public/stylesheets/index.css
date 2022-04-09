@@ -119,7 +119,10 @@
 #cu-details{
   margin: 15px;
 }
-
+#cvr-font-home{
+  font-size: 5rem; 
+  font-family: CG-omega
+}
 @media only screen and (max-width: 922px){
 html,body{
   overflow-x: hidden;
@@ -247,7 +250,9 @@ div#sc.conve-card-main{
   font-size: small;
   width: 75%;
 }
-
+#cvr-font-home{
+  font-size: 2rem;
+}
 }
 
 #insta {
