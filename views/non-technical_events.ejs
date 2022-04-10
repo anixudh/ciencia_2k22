@@ -127,11 +127,11 @@
 
     <div class="row align-items-center justify-content-center" id="row">
       <% for (let i = 0; i < nte_events.length; i++) { %>
-      <div class="event row m-2 col-2">
-        <a class="btn btn-primary"type="button" href=<%= "/non-technical_events/"+nte_events[i].id %>>
+      <div class="event m-2 col-2">
+        <a class="btn btn-primary"type="button" href=<%= "/technical_events/"+nte_events[i].id %>>
           <div class="card bg-primary shadow">
             <img class="card-img-top" src= <%= nte_events[i].img %> alt="image" />
-            <div class="card-body">
+            <div class="card-body ">
               <h4 class="card-title"><%= nte_events[i].name %></h4>
               <!-- <p class="card-text"><%= nte_events[i].desc %></p> -->
             </div>
