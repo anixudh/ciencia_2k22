@@ -11,6 +11,7 @@
 }
 #cvr-logo-us{
   width: 300px;
+  margin: 5px;
 }
 #ciencia-logo-inv {
   height: 100px;
@@ -44,7 +45,7 @@
   text-align: center;
 }
 .about-card#about-college{
-  height: 400px;
+  height: 600px;
 }
 #ciencia-logo {
   height: 300px;
@@ -176,8 +177,8 @@ html,body{
 }
 
 #acc-logo{
-  height: 30px;
-  width: 40px;
+  height: 60px;
+  width: 100px;
 }
 #faculty-conveners{
   width: 300px;
