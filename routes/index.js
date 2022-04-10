@@ -87,7 +87,7 @@ router.post("/register", [
         email: req.body.email,
         phone: req.body.phone,
         dob: DateTime.fromJSDate(req.body.dob).toFormat("dd-MM-yyyy"),
-        gender: req.body.gender.value,
+        gender: req.body.gender,
         uniqID: uniqID,
       });
       student.save(function (err) {
