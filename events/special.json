@@ -6,8 +6,8 @@
   "branch": "EEE",
   "rollno": "19B81A0211",
   "phone": 7013154855,
-  "desc": "insert desc here",
-  "img": "..\/assets\/special\/4DFX-min.png",
+  "desc": "",
+  "img": "../assets/special/4DFX-min.png",
   "venue": "TBD"
  },
  {
@@ -17,7 +17,7 @@
   "branch": "IT",
   "rollno": "20B81A1222",
   "phone": 7801046605,
-  "desc": "insert desc here",
+  "desc": "",
   "img": "../assets/special/BOX_CRICKET-min.png",
   "venue": "TBD"
  },
@@ -28,7 +28,7 @@
   "branch": "EIE",
   "rollno": "20B81A0043",
   "phone": 8919293030,
-  "desc": "insert desc here",
+  "desc": "",
   "img": "../assets/special/TUG_OF_WAR-min.png",
   "venue": "TBD"
  },
@@ -39,7 +39,7 @@
   "branch": "ECE",
   "rollno": "20B81A0476",
   "phone": 9640361000,
-  "desc": "insert desc here",
+  "desc": "",
   "img": "../assets/special/SUNNTERELIYE-min.png",
   "venue": "TBD"
  },
@@ -50,7 +50,7 @@
   "branch": "CSE",
   "rollno": "20B81A0512",
   "phone": 9573446104,
-  "desc": "insert desc here",
+  "desc": "",
   "img": "../assets/special/TREASURE_HUNT-min.png",
   "venue": "TBD"
  },
@@ -61,7 +61,7 @@
   "branch": "MECH",
   "rollno": "19B81A0329",
   "phone": 9133609506,
-  "desc": "insert desc here",
+  "desc": "",
   "img": "../assets/special/FUN_ZONE-min.png",
   "venue": "TBD"
  },
@@ -72,7 +72,7 @@
   "branch": "CIVIL",
   "rollno": "19B81A0118",
   "phone": 9059029325,
-  "desc": "insert desc here",
+  "desc": "",
   "img": "../assets/special/HAUNTED_HOUSE-min.png",
   "venue": "TBD"
  }
