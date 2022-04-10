@@ -22,7 +22,7 @@
   </head>
 
   <body class="bg-dark">
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-top:100px">
       <nav
         class="navbar navbar-dark-sm navbar-expand bg-black fixed-top d-flex justify-content-between"
       >
@@ -33,7 +33,10 @@
 
         <ul class="nav nav-navbar">
           <li class="nav-item">
-            <a class="nav-link" href="/#about">About</a>
+            <a class="nav-link" href="/" id="nav-home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-about" href="/#about">About</a>
           </li>
           <div class="dropdown me-3">
             <a
@@ -133,7 +136,7 @@
 
     <div class="row align-items-center justify-content-center" id="row">
       <% for (let i = 0; i < te_events.length; i++) { %>
-      <div class="event m-2 col-2">
+      <div class="event m-4 col-2">
         <a class="btn btn-primary"type="button" href=<%= "/technical_events/"+te_events[i].id %>>
           <div class="card bg-primary shadow">
             <img class="card-img-top" src= <%= te_events[i].img %> alt="image" />
