@@ -15,3 +15,5 @@ npm start
 - Express
 - MongoDB
 - Bootstrap
+
+## Deployed using Heroku
