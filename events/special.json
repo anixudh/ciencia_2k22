@@ -8,7 +8,7 @@
   "phone": 7013154855,
   "desc": "",
   "img": "../assets/special/4DFX-min.png",
-  "venue": "PG "
+  "venue": "PG Block 118"
  },
  {
   "id": 2,
@@ -19,18 +19,18 @@
   "phone": 7801046605,
   "desc": "",
   "img": "../assets/special/BOX_CRICKET-min.png",
-  "venue": "TBD"
+  "venue": "Mechanical Ground floor"
  },
  {
   "id": 3,
-  "name": "TUG OF WAR AND WATER GAMES",
+  "name": "TUG OF WAR ",
   "organizers": "Sravanth",
   "branch": "EIE",
   "rollno": "20B81A0043",
   "phone": 8919293030,
   "desc": "",
   "img": "../assets/special/TUG_OF_WAR-min.png",
-  "venue": "TBD"
+  "venue": "PG Block Ground"
  },
  {
   "id": 4,
@@ -41,7 +41,7 @@
   "phone": 8919293030,
   "desc": "",
   "img": "../assets/special/WATERGAMES-min.png",
-  "venue": "TBD" 
+  "venue": "PG Block Ground" 
  },
  {
   "id": 5,
@@ -52,7 +52,7 @@
   "phone": 9640361000,
   "desc": "",
   "img": "../assets/special/SUNNTERELIYE-min.png",
-  "venue": "TBD"
+  "venue": "Between First Year block and PG block"
  },
  {
     "id": 6,
@@ -63,7 +63,7 @@
     "phone": 9640361000,
     "desc": "",
     "img": "../assets/special/PHOTOBOOTH-min.png",
-    "venue": "TBD"  
+    "venue": "Between Library and CSE Block"  
  },
  {
   "id": 7,
@@ -74,7 +74,7 @@
   "phone": 9573446104,
   "desc": "",
   "img": "../assets/special/TREASURE_HUNT-min.png",
-  "venue": "TBD"
+  "venue": "Civil Block 226"
  },
  {
   "id": 8,
@@ -85,7 +85,7 @@
   "phone": 9133609506,
   "desc": "",
   "img": "../assets/special/FUN_ZONE-min.png",
-  "venue": "TBD"
+  "venue": "Mechanical Seminar Hall"
  },
  {
   "id": 9,
@@ -96,6 +96,6 @@
   "phone": 9059029325,
   "desc": "",
   "img": "../assets/special/HAUNTED_HOUSE-min.png",
-  "venue": "TBD"
+  "venue": "PG Block Open Space beside 101"
  }
 ]
