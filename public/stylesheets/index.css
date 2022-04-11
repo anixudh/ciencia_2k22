@@ -221,7 +221,7 @@ html,body{
   margin: 5px;
 }
 .conve-card-main#sc{
-  height: 175px;
+  height: 190px;
 }
 #faculty-conveners{
   justify-content: space-around!important;
@@ -240,7 +240,7 @@ div#sc.conve-card-main{
   flex-direction: column;
 }
 #stud-conv-bot .conve-card-main{
-  height: 170px;
+  height: 192px;
   width: 165px;
 }
 
